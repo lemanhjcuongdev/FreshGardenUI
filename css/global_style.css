@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "AvertaRegular";
+  src: url("../assets/fonts/Intelligent-Design-AvertaStdCY-Regular_3.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "AvertaBold";
+  src: url("../assets/fonts/Intelligent-Design-AvertaStdCY-Bold_1.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SVNDaylandRegular";
+  src: url("../assets/fonts/SVN-Dayland.ttf") format("opentype");
+}
+
+:root {
+  /* color  */
+  --green-color: #3C7E00;
+  --fresh-green-color: #008800;
+  --red-color: #B40009;
+
+  /* font  */
+  --primary-bold-font: "AvertaBold";
+  --primary-regular-font: "AvertaRegular";
+  --secondary-font: "SVNDaylandRegular";
+
+  /* transition  */
+  --primary-transition: all 0.3s ease-in-out;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-bold-font);
+}
