@@ -89,15 +89,6 @@
   color: #fff;
   text-align: center;
 }
-.container button {
-  padding: 10px 16px;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--fresh-green-color);
-  font-weight: 700;
-  color: #fff;
-  cursor: pointer;
-}
 .container .collection {
   display: flex;
   flex-direction: column;
@@ -140,7 +131,6 @@
   gap: 19px;
 }
 .container .collection .tab-pane h2 {
-  font-size: 24px;
   margin-bottom: 8px;
 }
 .container .collection .cake_item {
@@ -189,13 +179,6 @@
   color: var(--fresh-green-color);
 }
 .container .collection .add {
-  border: none;
-  font-size: 12px;
-  padding: 6.5px 9.5px;
-  border-radius: 5px;
-  background-color: var(--red-color);
-  color: white;
-  font-family: var(--primary-regular-font);
   margin-top: 12px;
 }
 .container .news {

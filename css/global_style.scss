@@ -39,6 +39,36 @@
 .body {
   display: block;
 }
+// SHARED_COMPONENTS
+//Heading 2
+h2 {
+  margin-top: 70px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: var(--red-color);
+}
+//Small Red Button Component
+//Medium Green Button Component
+button.redBtn,
+button.greenBtn {
+  display: block;
+  padding: 6.5px 9.5px;
+  border-radius: 5px;
+  font-family: var(--primary-regular-font);
+  font-size: 12px;
+  background-color: var(--red-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button.greenBtn {
+  padding: 10px 16px;
+  font-family: var(--primary-bold-font);
+  font-size: 16px;
+  background-color: var(--fresh-green-color);
+}
+//Cake Item Component
+//
 header {
   position: absolute;
   left: 0;
@@ -120,22 +150,8 @@ header {
       user-select: none;
     }
     button {
-      width: 151px;
-      height: 40px;
-      border: none;
-      background-color: var(--fresh-green-color);
-      color: white;
-      font-size: 16px;
-      border-radius: 5px;
-      margin-top: 15px;
-      cursor: pointer;
+      margin: 15px auto 0px auto;
     }
-  }
-  h2 {
-    margin-top: 70px;
-    margin-bottom: 40px;
-    text-align: center;
-    color: var(--red-color);
   }
 }
 footer {
@@ -214,6 +230,7 @@ footer {
     left: 0;
     right: 0;
     height: 90px;
+    background-color: white;
     .side_button {
       flex: 1;
       display: flex;
@@ -281,6 +298,7 @@ footer {
   .container {
     margin: 0 20px;
     .banner {
+      height: 251px;
       background-size: contain;
       padding-bottom: 0px !important;
       margin: auto -20px;

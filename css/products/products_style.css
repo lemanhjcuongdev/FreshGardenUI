@@ -65,16 +65,6 @@
   color: var(--fresh-green-color);
 }
 .container .main_content #products .cakes .cake_item a .add {
-  display: block;
-  border: none;
-  font-size: 12px;
-  padding: 6.5px 9.5px;
-  border-radius: 5px;
-  background-color: var(--red-color);
-  color: white;
-  font-family: var(--primary-regular-font);
-  margin-top: 12px;
-  cursor: pointer;
   margin: 12px auto 24px auto;
 }
 .container .main_content #products .cakes .cake_item:hover {
@@ -83,14 +73,7 @@
   cursor: pointer;
 }
 .container .main_content #products button.more {
-  display: block;
   margin: 40px auto;
-  border: none;
-  font-size: 16px;
-  padding: 10px 16px;
-  background-color: var(--fresh-green-color);
-  color: white;
-  border-radius: 5px;
 }
 .container .main_content .category_select_menu,
 .container .main_content .price_select_menu,
@@ -432,12 +415,7 @@
   }
   .container .main_content #products .right_top_title button {
     display: block;
-    font-size: 16px;
-    color: white;
-    border: none;
     background-color: var(--red-color);
-    border-radius: 5px;
-    padding: 10px 16px;
     margin-bottom: 22px;
   }
   .container .main_content #products .cakes {
