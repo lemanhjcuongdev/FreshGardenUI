@@ -1,0 +1,450 @@
+.container .main_content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 15px;
+}
+.container .main_content h3 {
+  margin-bottom: 22px;
+}
+.container .main_content .options {
+  grid-column: 1/4;
+}
+.container .main_content .options h3.title {
+  border-bottom: 2px solid var(--red-color);
+}
+.container .main_content .options h4#title,
+.container .main_content .options span,
+.container .main_content .options li {
+  font-family: var(--primary-regular-font);
+}
+.container .main_content .options .left_top_title img {
+  display: none;
+}
+.container .main_content #products {
+  grid-column: 4/13;
+}
+.container .main_content #products h3 {
+  color: var(--red-color);
+}
+.container .main_content #products .right_top_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .main_content #products .right_top_title button {
+  display: none;
+}
+.container .main_content #products .cakes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  gap: 15px;
+}
+.container .main_content #products .cakes .cake_item {
+  transition: var(--primary-transition);
+  border: 0.5px solid var(--red-color);
+}
+.container .main_content #products .cakes .cake_item a {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+.container .main_content #products .cakes .cake_item a img {
+  width: 100%;
+  height: 216px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .main_content #products .cakes .cake_item a .name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 14px;
+}
+.container .main_content #products .cakes .cake_item a .price {
+  margin-top: 8px;
+  font-size: 20px;
+  color: var(--fresh-green-color);
+}
+.container .main_content #products .cakes .cake_item a .add {
+  display: block;
+  border: none;
+  font-size: 12px;
+  padding: 6.5px 9.5px;
+  border-radius: 5px;
+  background-color: var(--red-color);
+  color: white;
+  font-family: var(--primary-regular-font);
+  margin-top: 12px;
+  cursor: pointer;
+  margin: 12px auto 24px auto;
+}
+.container .main_content #products .cakes .cake_item:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: translateY(-8px);
+  cursor: pointer;
+}
+.container .main_content #products button.more {
+  display: block;
+  margin: 40px auto;
+  border: none;
+  font-size: 16px;
+  padding: 10px 16px;
+  background-color: var(--fresh-green-color);
+  color: white;
+  border-radius: 5px;
+}
+.container .main_content .category_select_menu,
+.container .main_content .price_select_menu,
+.container .main_content .flavor_select_menu,
+.container .main_content .size_select_menu {
+  width: 100%;
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 18px;
+}
+.container .main_content .category_select_menu .category_select_btn,
+.container .main_content .category_select_menu .price_select_btn,
+.container .main_content .category_select_menu .flavor_select_btn,
+.container .main_content .category_select_menu .size_select_btn,
+.container .main_content .price_select_menu .category_select_btn,
+.container .main_content .price_select_menu .price_select_btn,
+.container .main_content .price_select_menu .flavor_select_btn,
+.container .main_content .price_select_menu .size_select_btn,
+.container .main_content .flavor_select_menu .category_select_btn,
+.container .main_content .flavor_select_menu .price_select_btn,
+.container .main_content .flavor_select_menu .flavor_select_btn,
+.container .main_content .flavor_select_menu .size_select_btn,
+.container .main_content .size_select_menu .category_select_btn,
+.container .main_content .size_select_menu .price_select_btn,
+.container .main_content .size_select_menu .flavor_select_btn,
+.container .main_content .size_select_menu .size_select_btn {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.container .main_content .category_select_menu .category_select_btn .category_btn_text,
+.container .main_content .category_select_menu .category_select_btn .price_btn_text,
+.container .main_content .category_select_menu .category_select_btn .flavor_btn_text,
+.container .main_content .category_select_menu .category_select_btn .size_btn_text,
+.container .main_content .category_select_menu .price_select_btn .category_btn_text,
+.container .main_content .category_select_menu .price_select_btn .price_btn_text,
+.container .main_content .category_select_menu .price_select_btn .flavor_btn_text,
+.container .main_content .category_select_menu .price_select_btn .size_btn_text,
+.container .main_content .category_select_menu .flavor_select_btn .category_btn_text,
+.container .main_content .category_select_menu .flavor_select_btn .price_btn_text,
+.container .main_content .category_select_menu .flavor_select_btn .flavor_btn_text,
+.container .main_content .category_select_menu .flavor_select_btn .size_btn_text,
+.container .main_content .category_select_menu .size_select_btn .category_btn_text,
+.container .main_content .category_select_menu .size_select_btn .price_btn_text,
+.container .main_content .category_select_menu .size_select_btn .flavor_btn_text,
+.container .main_content .category_select_menu .size_select_btn .size_btn_text,
+.container .main_content .price_select_menu .category_select_btn .category_btn_text,
+.container .main_content .price_select_menu .category_select_btn .price_btn_text,
+.container .main_content .price_select_menu .category_select_btn .flavor_btn_text,
+.container .main_content .price_select_menu .category_select_btn .size_btn_text,
+.container .main_content .price_select_menu .price_select_btn .category_btn_text,
+.container .main_content .price_select_menu .price_select_btn .price_btn_text,
+.container .main_content .price_select_menu .price_select_btn .flavor_btn_text,
+.container .main_content .price_select_menu .price_select_btn .size_btn_text,
+.container .main_content .price_select_menu .flavor_select_btn .category_btn_text,
+.container .main_content .price_select_menu .flavor_select_btn .price_btn_text,
+.container .main_content .price_select_menu .flavor_select_btn .flavor_btn_text,
+.container .main_content .price_select_menu .flavor_select_btn .size_btn_text,
+.container .main_content .price_select_menu .size_select_btn .category_btn_text,
+.container .main_content .price_select_menu .size_select_btn .price_btn_text,
+.container .main_content .price_select_menu .size_select_btn .flavor_btn_text,
+.container .main_content .price_select_menu .size_select_btn .size_btn_text,
+.container .main_content .flavor_select_menu .category_select_btn .category_btn_text,
+.container .main_content .flavor_select_menu .category_select_btn .price_btn_text,
+.container .main_content .flavor_select_menu .category_select_btn .flavor_btn_text,
+.container .main_content .flavor_select_menu .category_select_btn .size_btn_text,
+.container .main_content .flavor_select_menu .price_select_btn .category_btn_text,
+.container .main_content .flavor_select_menu .price_select_btn .price_btn_text,
+.container .main_content .flavor_select_menu .price_select_btn .flavor_btn_text,
+.container .main_content .flavor_select_menu .price_select_btn .size_btn_text,
+.container .main_content .flavor_select_menu .flavor_select_btn .category_btn_text,
+.container .main_content .flavor_select_menu .flavor_select_btn .price_btn_text,
+.container .main_content .flavor_select_menu .flavor_select_btn .flavor_btn_text,
+.container .main_content .flavor_select_menu .flavor_select_btn .size_btn_text,
+.container .main_content .flavor_select_menu .size_select_btn .category_btn_text,
+.container .main_content .flavor_select_menu .size_select_btn .price_btn_text,
+.container .main_content .flavor_select_menu .size_select_btn .flavor_btn_text,
+.container .main_content .flavor_select_menu .size_select_btn .size_btn_text,
+.container .main_content .size_select_menu .category_select_btn .category_btn_text,
+.container .main_content .size_select_menu .category_select_btn .price_btn_text,
+.container .main_content .size_select_menu .category_select_btn .flavor_btn_text,
+.container .main_content .size_select_menu .category_select_btn .size_btn_text,
+.container .main_content .size_select_menu .price_select_btn .category_btn_text,
+.container .main_content .size_select_menu .price_select_btn .price_btn_text,
+.container .main_content .size_select_menu .price_select_btn .flavor_btn_text,
+.container .main_content .size_select_menu .price_select_btn .size_btn_text,
+.container .main_content .size_select_menu .flavor_select_btn .category_btn_text,
+.container .main_content .size_select_menu .flavor_select_btn .price_btn_text,
+.container .main_content .size_select_menu .flavor_select_btn .flavor_btn_text,
+.container .main_content .size_select_menu .flavor_select_btn .size_btn_text,
+.container .main_content .size_select_menu .size_select_btn .category_btn_text,
+.container .main_content .size_select_menu .size_select_btn .price_btn_text,
+.container .main_content .size_select_menu .size_select_btn .flavor_btn_text,
+.container .main_content .size_select_menu .size_select_btn .size_btn_text {
+  color: #666666;
+}
+.container .main_content .category_select_menu .category_select_btn img,
+.container .main_content .category_select_menu .price_select_btn img,
+.container .main_content .category_select_menu .flavor_select_btn img,
+.container .main_content .category_select_menu .size_select_btn img,
+.container .main_content .price_select_menu .category_select_btn img,
+.container .main_content .price_select_menu .price_select_btn img,
+.container .main_content .price_select_menu .flavor_select_btn img,
+.container .main_content .price_select_menu .size_select_btn img,
+.container .main_content .flavor_select_menu .category_select_btn img,
+.container .main_content .flavor_select_menu .price_select_btn img,
+.container .main_content .flavor_select_menu .flavor_select_btn img,
+.container .main_content .flavor_select_menu .size_select_btn img,
+.container .main_content .size_select_menu .category_select_btn img,
+.container .main_content .size_select_menu .price_select_btn img,
+.container .main_content .size_select_menu .flavor_select_btn img,
+.container .main_content .size_select_menu .size_select_btn img {
+  margin-left: 10px;
+  transition: var(--light-transition);
+}
+.container .main_content .category_select_menu .category_options,
+.container .main_content .category_select_menu .price_options,
+.container .main_content .category_select_menu .flavor_options,
+.container .main_content .category_select_menu .size_options,
+.container .main_content .price_select_menu .category_options,
+.container .main_content .price_select_menu .price_options,
+.container .main_content .price_select_menu .flavor_options,
+.container .main_content .price_select_menu .size_options,
+.container .main_content .flavor_select_menu .category_options,
+.container .main_content .flavor_select_menu .price_options,
+.container .main_content .flavor_select_menu .flavor_options,
+.container .main_content .flavor_select_menu .size_options,
+.container .main_content .size_select_menu .category_options,
+.container .main_content .size_select_menu .price_options,
+.container .main_content .size_select_menu .flavor_options,
+.container .main_content .size_select_menu .size_options {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  background: #fff;
+  margin-top: 8px;
+  border-radius: 8px;
+  list-style: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+.container .main_content .category_select_menu .category_options .category_option,
+.container .main_content .category_select_menu .category_options .price_option,
+.container .main_content .category_select_menu .category_options .flavor_option,
+.container .main_content .category_select_menu .category_options .size_option,
+.container .main_content .category_select_menu .price_options .category_option,
+.container .main_content .category_select_menu .price_options .price_option,
+.container .main_content .category_select_menu .price_options .flavor_option,
+.container .main_content .category_select_menu .price_options .size_option,
+.container .main_content .category_select_menu .flavor_options .category_option,
+.container .main_content .category_select_menu .flavor_options .price_option,
+.container .main_content .category_select_menu .flavor_options .flavor_option,
+.container .main_content .category_select_menu .flavor_options .size_option,
+.container .main_content .category_select_menu .size_options .category_option,
+.container .main_content .category_select_menu .size_options .price_option,
+.container .main_content .category_select_menu .size_options .flavor_option,
+.container .main_content .category_select_menu .size_options .size_option,
+.container .main_content .price_select_menu .category_options .category_option,
+.container .main_content .price_select_menu .category_options .price_option,
+.container .main_content .price_select_menu .category_options .flavor_option,
+.container .main_content .price_select_menu .category_options .size_option,
+.container .main_content .price_select_menu .price_options .category_option,
+.container .main_content .price_select_menu .price_options .price_option,
+.container .main_content .price_select_menu .price_options .flavor_option,
+.container .main_content .price_select_menu .price_options .size_option,
+.container .main_content .price_select_menu .flavor_options .category_option,
+.container .main_content .price_select_menu .flavor_options .price_option,
+.container .main_content .price_select_menu .flavor_options .flavor_option,
+.container .main_content .price_select_menu .flavor_options .size_option,
+.container .main_content .price_select_menu .size_options .category_option,
+.container .main_content .price_select_menu .size_options .price_option,
+.container .main_content .price_select_menu .size_options .flavor_option,
+.container .main_content .price_select_menu .size_options .size_option,
+.container .main_content .flavor_select_menu .category_options .category_option,
+.container .main_content .flavor_select_menu .category_options .price_option,
+.container .main_content .flavor_select_menu .category_options .flavor_option,
+.container .main_content .flavor_select_menu .category_options .size_option,
+.container .main_content .flavor_select_menu .price_options .category_option,
+.container .main_content .flavor_select_menu .price_options .price_option,
+.container .main_content .flavor_select_menu .price_options .flavor_option,
+.container .main_content .flavor_select_menu .price_options .size_option,
+.container .main_content .flavor_select_menu .flavor_options .category_option,
+.container .main_content .flavor_select_menu .flavor_options .price_option,
+.container .main_content .flavor_select_menu .flavor_options .flavor_option,
+.container .main_content .flavor_select_menu .flavor_options .size_option,
+.container .main_content .flavor_select_menu .size_options .category_option,
+.container .main_content .flavor_select_menu .size_options .price_option,
+.container .main_content .flavor_select_menu .size_options .flavor_option,
+.container .main_content .flavor_select_menu .size_options .size_option,
+.container .main_content .size_select_menu .category_options .category_option,
+.container .main_content .size_select_menu .category_options .price_option,
+.container .main_content .size_select_menu .category_options .flavor_option,
+.container .main_content .size_select_menu .category_options .size_option,
+.container .main_content .size_select_menu .price_options .category_option,
+.container .main_content .size_select_menu .price_options .price_option,
+.container .main_content .size_select_menu .price_options .flavor_option,
+.container .main_content .size_select_menu .price_options .size_option,
+.container .main_content .size_select_menu .flavor_options .category_option,
+.container .main_content .size_select_menu .flavor_options .price_option,
+.container .main_content .size_select_menu .flavor_options .flavor_option,
+.container .main_content .size_select_menu .flavor_options .size_option,
+.container .main_content .size_select_menu .size_options .category_option,
+.container .main_content .size_select_menu .size_options .price_option,
+.container .main_content .size_select_menu .size_options .flavor_option,
+.container .main_content .size_select_menu .size_options .size_option {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.container .main_content .category_select_menu .category_options .category_option:hover,
+.container .main_content .category_select_menu .category_options .price_option:hover,
+.container .main_content .category_select_menu .category_options .flavor_option:hover,
+.container .main_content .category_select_menu .category_options .size_option:hover,
+.container .main_content .category_select_menu .price_options .category_option:hover,
+.container .main_content .category_select_menu .price_options .price_option:hover,
+.container .main_content .category_select_menu .price_options .flavor_option:hover,
+.container .main_content .category_select_menu .price_options .size_option:hover,
+.container .main_content .category_select_menu .flavor_options .category_option:hover,
+.container .main_content .category_select_menu .flavor_options .price_option:hover,
+.container .main_content .category_select_menu .flavor_options .flavor_option:hover,
+.container .main_content .category_select_menu .flavor_options .size_option:hover,
+.container .main_content .category_select_menu .size_options .category_option:hover,
+.container .main_content .category_select_menu .size_options .price_option:hover,
+.container .main_content .category_select_menu .size_options .flavor_option:hover,
+.container .main_content .category_select_menu .size_options .size_option:hover,
+.container .main_content .price_select_menu .category_options .category_option:hover,
+.container .main_content .price_select_menu .category_options .price_option:hover,
+.container .main_content .price_select_menu .category_options .flavor_option:hover,
+.container .main_content .price_select_menu .category_options .size_option:hover,
+.container .main_content .price_select_menu .price_options .category_option:hover,
+.container .main_content .price_select_menu .price_options .price_option:hover,
+.container .main_content .price_select_menu .price_options .flavor_option:hover,
+.container .main_content .price_select_menu .price_options .size_option:hover,
+.container .main_content .price_select_menu .flavor_options .category_option:hover,
+.container .main_content .price_select_menu .flavor_options .price_option:hover,
+.container .main_content .price_select_menu .flavor_options .flavor_option:hover,
+.container .main_content .price_select_menu .flavor_options .size_option:hover,
+.container .main_content .price_select_menu .size_options .category_option:hover,
+.container .main_content .price_select_menu .size_options .price_option:hover,
+.container .main_content .price_select_menu .size_options .flavor_option:hover,
+.container .main_content .price_select_menu .size_options .size_option:hover,
+.container .main_content .flavor_select_menu .category_options .category_option:hover,
+.container .main_content .flavor_select_menu .category_options .price_option:hover,
+.container .main_content .flavor_select_menu .category_options .flavor_option:hover,
+.container .main_content .flavor_select_menu .category_options .size_option:hover,
+.container .main_content .flavor_select_menu .price_options .category_option:hover,
+.container .main_content .flavor_select_menu .price_options .price_option:hover,
+.container .main_content .flavor_select_menu .price_options .flavor_option:hover,
+.container .main_content .flavor_select_menu .price_options .size_option:hover,
+.container .main_content .flavor_select_menu .flavor_options .category_option:hover,
+.container .main_content .flavor_select_menu .flavor_options .price_option:hover,
+.container .main_content .flavor_select_menu .flavor_options .flavor_option:hover,
+.container .main_content .flavor_select_menu .flavor_options .size_option:hover,
+.container .main_content .flavor_select_menu .size_options .category_option:hover,
+.container .main_content .flavor_select_menu .size_options .price_option:hover,
+.container .main_content .flavor_select_menu .size_options .flavor_option:hover,
+.container .main_content .flavor_select_menu .size_options .size_option:hover,
+.container .main_content .size_select_menu .category_options .category_option:hover,
+.container .main_content .size_select_menu .category_options .price_option:hover,
+.container .main_content .size_select_menu .category_options .flavor_option:hover,
+.container .main_content .size_select_menu .category_options .size_option:hover,
+.container .main_content .size_select_menu .price_options .category_option:hover,
+.container .main_content .size_select_menu .price_options .price_option:hover,
+.container .main_content .size_select_menu .price_options .flavor_option:hover,
+.container .main_content .size_select_menu .price_options .size_option:hover,
+.container .main_content .size_select_menu .flavor_options .category_option:hover,
+.container .main_content .size_select_menu .flavor_options .price_option:hover,
+.container .main_content .size_select_menu .flavor_options .flavor_option:hover,
+.container .main_content .size_select_menu .flavor_options .size_option:hover,
+.container .main_content .size_select_menu .size_options .category_option:hover,
+.container .main_content .size_select_menu .size_options .price_option:hover,
+.container .main_content .size_select_menu .size_options .flavor_option:hover,
+.container .main_content .size_select_menu .size_options .size_option:hover {
+  background: #f2f2f2;
+}
+.container .main_content .category_select_menu.active img,
+.container .main_content .price_select_menu.active img,
+.container .main_content .flavor_select_menu.active img,
+.container .main_content .size_select_menu.active img {
+  transform: rotate(-180deg);
+}
+.container .main_content .category_select_menu.active .category_options,
+.container .main_content .category_select_menu.active .price_options,
+.container .main_content .category_select_menu.active .flavor_options,
+.container .main_content .category_select_menu.active .size_options,
+.container .main_content .price_select_menu.active .category_options,
+.container .main_content .price_select_menu.active .price_options,
+.container .main_content .price_select_menu.active .flavor_options,
+.container .main_content .price_select_menu.active .size_options,
+.container .main_content .flavor_select_menu.active .category_options,
+.container .main_content .flavor_select_menu.active .price_options,
+.container .main_content .flavor_select_menu.active .flavor_options,
+.container .main_content .flavor_select_menu.active .size_options,
+.container .main_content .size_select_menu.active .category_options,
+.container .main_content .size_select_menu.active .price_options,
+.container .main_content .size_select_menu.active .flavor_options,
+.container .main_content .size_select_menu.active .size_options {
+  display: block;
+}
+
+@media (max-width: 393px) {
+  .container .main_content .options {
+    display: none;
+  }
+  .container .main_content .options.active {
+    background-color: white;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 28px 14px;
+  }
+  .container .main_content .options.active .left_top_title h3 {
+    display: none;
+  }
+  .container .main_content .options.active .left_top_title img {
+    display: block;
+    padding: 0px 20px 20px 0px;
+  }
+  .container .main_content #products {
+    grid-column: 1/13;
+  }
+  .container .main_content #products .right_top_title button {
+    display: block;
+    font-size: 16px;
+    color: white;
+    border: none;
+    background-color: var(--red-color);
+    border-radius: 5px;
+    padding: 10px 16px;
+    margin-bottom: 22px;
+  }
+  .container .main_content #products .cakes {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .container .main_content #products .cakes .cake_item a img {
+    height: 165px;
+  }
+}/*# sourceMappingURL=products_style.css.map */

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/global_style.css" />
+    <link rel="stylesheet" href="./css/products/products_style.css" />
+    <title>Sản phẩm</title>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html" class="logo"></a>
+      <ul class="menu_list">
+        <li class="menu_item">
+          <a href="./index.html">Trang chủ</a>
+        </li>
+        <li class="menu_item active">
+          <a href="./products.html"> Sản phẩm </a>
+        </li>
+        <li class="menu_item">
+          <a href="./news.html"> Tin tức </a>
+        </li>
+        <li class="menu_item">
+          <a href="./contacts.html"> Liên hệ </a>
+        </li>
+      </ul>
+      <ul class="options">
+        <li>
+          <a href="./search.html">
+            <img src="./assets/images/search.svg" alt="Search" title="Search" />
+          </a>
+        </li>
+        <li>
+          <a href="./cart.html">
+            <img src="./assets/images/cart.svg" alt="Cart" title="Cart" />
+          </a>
+        </li>
+        <li>
+          <a href="./user.html">
+            <img src="./assets/images/user.svg" alt="User" title="User" />
+          </a>
+        </li>
+      </ul>
+    </header>
+    <div class="mobile_header">
+      <div class="side_button" id="side_button">
+        <img src="./assets/images/side_button.svg" alt="" />
+      </div>
+      <a href="./index.html" class="logo"></a>
+      <ul class="options">
+        <li>
+          <a href="./search.html">
+            <img src="./assets/images/search.svg" alt="Search" title="Search" />
+          </a>
+        </li>
+        <li>
+          <a href="./cart.html">
+            <img src="./assets/images/cart.svg" alt="Cart" title="Cart" />
+          </a>
+        </li>
+        <li>
+          <a href="./user.html">
+            <img src="./assets/images/user.svg" alt="User" title="User" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="expanded_header" id="expanded_header">
+      <ul class="mobile_menu_list">
+        <li class="mobile_menu_close" id="mobile_menu_close">
+          <img src="./assets/images/close_button.svg" alt="" />
+        </li>
+        <li class="mobile_menu_item">
+          <a href="./index.html">Trang chủ</a>
+        </li>
+        <li class="mobile_menu_item active">
+          <a href="./products.html"> Sản phẩm </a>
+        </li>
+        <li class="mobile_menu_item">
+          <a href="./news.html"> Tin tức </a>
+        </li>
+        <li class="mobile_menu_item">
+          <a href="./contacts.html"> Liên hệ </a>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="banner">
+        <h1>
+          Tri ân nhà giáo <br />
+          Gửi trao ngọt ngào
+        </h1>
+        <a href="./news_detail.html"><button>Khám phá ngay</button></a>
+      </div>
+      <div class="main_content">
+        <section class="options" id="options">
+          <div class="left_top_title">
+            <h3 class="title">Bộ lọc sản phẩm</h3>
+            <img
+              id="filter_close_btn"
+              src="./assets/images/close_button.svg"
+              alt=""
+            />
+          </div>
+          <section class="category_select_menu">
+            <div class="category_select_btn">
+              <span class="category_btn_text">Chọn loại bánh</span>
+              <img src="./assets/images/products/chevron_icon.svg" alt="" />
+            </div>
+            <ul class="category_options">
+              <li class="category_option">Bánh kem</li>
+              <li class="category_option">Cupcake</li>
+              <li class="category_option">Bánh ngọt</li>
+              <li class="category_option">Bánh mì</li>
+            </ul>
+          </section>
+          <h4 id="title">Giá bán</h4>
+          <section class="price_select_menu">
+            <div class="price_select_btn">
+              <span class="price_btn_text">Chọn giá</span>
+              <img src="./assets/images/products/chevron_icon.svg" alt="" />
+            </div>
+            <ul class="price_options">
+              <li class="price_option">Dưới 100.000đ</li>
+              <li class="price_option">Từ 100.000đ - 200.000đ</li>
+              <li class="price_option">Từ 200.000đ - 300.000đ</li>
+              <li class="price_option">Trên 300.000đ</li>
+            </ul>
+          </section>
+          <h4 id="title">Hương vị</h4>
+          <section class="flavor_select_menu">
+            <div class="flavor_select_btn">
+              <span class="flavor_btn_text">Chọn loại kem</span>
+              <img src="./assets/images/products/chevron_icon.svg" alt="" />
+            </div>
+            <ul class="flavor_options">
+              <li class="flavor_option">Vanilla</li>
+              <li class="flavor_option">Matcha</li>
+              <li class="flavor_option">Socola</li>
+              <li class="flavor_option">Vị khác</li>
+            </ul>
+          </section>
+          <h4 id="title">Kích thước</h4>
+          <section class="size_select_menu">
+            <div class="size_select_btn">
+              <span class="size_btn_text">Đường kính bánh</span>
+              <img src="./assets/images/products/chevron_icon.svg" alt="" />
+            </div>
+            <ul class="size_options">
+              <li class="size_option">18 cm</li>
+              <li class="size_option">20 cm</li>
+              <li class="size_option">24 cm</li>
+              <li class="size_option">Khác</li>
+            </ul>
+          </section>
+        </section>
+        <section id="products">
+          <div class="right_top_title">
+            <h3 id="title">Tất cả sản phẩm</h3>
+            <button id="filter_open_btn">Bộ lọc >></button>
+          </div>
+          <section class="cakes">
+            <div class="cake_item">
+              <a href="./product_detail.html">
+                <img src="./assets/images/products/item1.png" alt="" />
+                <p class="name">Bánh kem hoa cúc</p>
+                <p class="price">200.000 đ</p>
+                <button class="add">Thêm vào giỏ</button>
+              </a>
+            </div>
+            <div class="cake_item">
+              <a href="./product_detail.html">
+                <img src="./assets/images/products/item2.png" alt="" />
+                <p class="name">Bánh kem nhím nâu</p>
+                <p class="price">250.000 đ</p>
+                <button class="add">Thêm vào giỏ</button>
+              </a>
+            </div>
+            <div class="cake_item">
+              <a href="./product_detail.html">
+                <img src="./assets/images/products/item3.png" alt="" />
+                <p class="name">Red velvet strawberry</p>
+                <p class="price">90.000 đ</p>
+                <button class="add">Thêm vào giỏ</button>
+              </a>
+            </div>
+            <div class="cake_item">
+              <a href="./product_detail.html">
+                <img src="./assets/images/products/item4.png" alt="" />
+                <p class="name">Red velvet 2 tầng</p>
+                <p class="price">500.000 đ</p>
+                <button class="add">Thêm vào giỏ</button>
+              </a>
+            </div>
+            <div class="cake_item">
+              <a href="./product_detail.html">
+                <img src="./assets/images/products/item5.png" alt="" />
+                <p class="name">Cupcake trái cây</p>
+                <p class="price">50.000 đ</p>
+                <button class="add">Thêm vào giỏ</button>
+              </a>
+            </div>
+            <div class="cake_item">
+              <a href="./product_detail.html">
+                <img src="./assets/images/products/item6.png" alt="" />
+                <p class="name">Bánh kem cà rốt</p>
+                <p class="price">300.000 đ</p>
+                <button class="add">Thêm vào giỏ</button>
+              </a>
+            </div>
+            <div class="cake_item">
+              <a href="./product_detail.html">
+                <img src="./assets/images/products/item7.png" alt="" />
+                <p class="name">Bánh kem cử nhân</p>
+                <p class="price">450.000 đ</p>
+                <button class="add">Thêm vào giỏ</button>
+              </a>
+            </div>
+            <div class="cake_item">
+              <a href="./product_detail.html">
+                <img src="./assets/images/products/item8.png" alt="" />
+                <p class="name">Bánh kem donut</p>
+                <p class="price">400.000 đ</p>
+                <button class="add">Thêm vào giỏ</button>
+              </a>
+            </div>
+            <div class="cake_item">
+              <a href="./product_detail.html">
+                <img src="./assets/images/products/item4.png" alt="" />
+                <p class="name">Mini cake giáng sinh</p>
+                <p class="price">80.000 đ</p>
+                <button class="add">Thêm vào giỏ</button>
+              </a>
+            </div>
+          </section>
+          <button class="more">Xem thêm</button>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <ul class="footer">
+        <li class="footer_item">
+          <h4 class="title">Giao hàng nhanh chóng</h4>
+          <p class="sub_title">Vận chuyển hỏa tốc</p>
+        </li>
+        <li class="footer_item">
+          <h4 class="title">Không chất bảo quản</h4>
+          <p class="sub_title">100% nguyên liệu sạch</p>
+        </li>
+        <li class="footer_item">
+          <h4 class="title">Đặt bánh online</h4>
+          <p class="sub_title">Tổng đài 0327006976</p>
+        </li>
+        <li class="footer_item">
+          <h4 class="title">Hỗ trợ 24/7</h4>
+          <p class="sub_title">Hotline 0366006112</p>
+        </li>
+      </ul>
+      <ul class="footer below">
+        <li class="footer_item below">
+          <h4 class="title below">Mua tại cửa hàng</h4>
+          <p class="sub_title below">21 Lê Đức Thọ, Mỹ Đình, Hà Nội</p>
+          <p class="sub_title below">Thứ 2 đến thứ 7: 7.00 - 22.00</p>
+          <p class="sub_title below">Chủ nhật & ngày lễ: 8.30 - 21.00</p>
+        </li>
+        <li class="footer_item below">
+          <h4 class="title below">Hỗ trợ khách hàng</h4>
+          <a href="./buying_guide.html" class="sub_title below"
+            >Hướng dẫn mua hàng</a
+          >
+          <br />
+          <a href="./delivery_policy.html" class="sub_title below"
+            >Chính sách vận chuyển</a
+          >
+          <br />
+          <a href="./refund_policy.html" class="sub_title below"
+            >Chính sách đổi trả & hoàn tiền</a
+          >
+        </li>
+        <li class="footer_item below">
+          <h4 class="title below">Khuyến mãi</h4>
+          <p class="sub_title below">Nhập email để đăng ký nhận khuyến mãi</p>
+          <div class="mail_box">
+            <input
+              type="email"
+              name="offer_email"
+              id="offer_email"
+              placeholder="Nhập email"
+            />
+            <button>Gửi</button>
+          </div>
+        </li>
+      </ul>
+    </footer>
+  </body>
+  <script src="./js/products_script.js"></script>
+  <script src="./js/index_script.js"></script>
+</html>
