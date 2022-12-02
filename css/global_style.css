@@ -61,6 +61,58 @@ button.greenBtn {
   background-color: var(--fresh-green-color);
 }
 
+.cake_item {
+  transition: var(--primary-transition);
+  border: 0.5px solid var(--red-color);
+}
+.cake_item a {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+.cake_item a img {
+  width: 100%;
+  height: 216px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cake_item a .name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 14px;
+}
+.cake_item a .price {
+  margin-top: 8px;
+  font-size: 20px;
+  color: var(--fresh-green-color);
+}
+.cake_item a .add {
+  margin: 12px auto 24px auto;
+}
+
+.cake_item:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: translateY(-8px);
+  cursor: pointer;
+}
+
+@media (max-width: 393px) {
+  .cake_item a img {
+    height: 164.96px;
+  }
+}
+.desktop_cake_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  gap: 30px 15px;
+}
+
+@media (max-width: 393px) {
+  .mobile_cake_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 10px;
+  }
+}
 header {
   position: absolute;
   left: 0;
