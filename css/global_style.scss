@@ -112,6 +112,12 @@ button.greenBtn {
     }
   }
 }
+//Desktop Page Grid System
+.main_content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 15px;
+}
 //Cake Grid System
 //Desktop Cake Grid System
 .desktop_cake_grid {

@@ -103,6 +103,12 @@ button.greenBtn {
     height: 164.96px;
   }
 }
+.main_content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 15px;
+}
+
 .desktop_cake_grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
