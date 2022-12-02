@@ -35,11 +35,6 @@
           display: none;
         }
       }
-      .cakes {
-        // display: grid;
-        // grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
-        // gap: 30px 15px;
-      }
       button.more {
         margin: 40px auto;
       }
@@ -157,10 +152,6 @@
             background-color: var(--red-color);
             margin-bottom: 22px;
           }
-        }
-        .cakes {
-          grid-template-columns: repeat(2, 1fr);
-          gap: 10px;
         }
       }
     }

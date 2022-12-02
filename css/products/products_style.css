@@ -380,8 +380,4 @@
     background-color: var(--red-color);
     margin-bottom: 22px;
   }
-  .container .main_content #products .cakes {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
 }/*# sourceMappingURL=products_style.css.map */

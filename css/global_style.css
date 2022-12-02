@@ -15,6 +15,8 @@
   --green-color: #3c7e00;
   --fresh-green-color: #008800;
   --red-color: #b40009;
+  --grey-color: #bcbcbc;
+  --light-grey-color: #d9d9d9;
   /* font  */
   --primary-bold-font: "AvertaBold";
   --primary-regular-font: "AvertaRegular";
@@ -125,7 +127,7 @@ header {
 }
 header .logo {
   flex-grow: 1;
-  background-image: url("../../assets/images/logo.png");
+  background-image: url("../assets/images/logo.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
@@ -173,7 +175,7 @@ header ul.options li a img {
   margin: 0 auto;
 }
 .container .banner {
-  background-image: url("../../assets/images/banner.png");
+  background-image: url("../assets/images/banner.png");
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
@@ -288,7 +290,7 @@ footer ul.footer.below li.below .mail_box button {
   }
   .mobile_header .logo {
     flex: 1;
-    background-image: url("../../assets/images/logo.png");
+    background-image: url("../assets/images/logo.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;

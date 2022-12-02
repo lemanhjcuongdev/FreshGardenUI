@@ -2,10 +2,10 @@
   margin-top: 0px !important;
 }
 .container .categories ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(163px, 1fr));
-  gap: 30px;
   list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(162.3px, 1fr));
+  gap: 22.7px;
 }
 .container .categories ul li {
   transition: var(--primary-transition);
@@ -127,44 +127,9 @@
 }
 .container .collection .tab-pane.active {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
-  gap: 19px;
 }
 .container .collection .tab-pane h2 {
   margin-bottom: 8px;
-}
-.container .collection .redvelvet,
-.container .collection .tiramisu,
-.container .collection .fruitcake,
-.container .collection .pandancake {
-  width: 224px;
-  height: 225px;
-  background-image: url("../../assets/images/index/redvelvet.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.container .collection .tiramisu {
-  background-image: url("../../assets/images/index/tiramisu.png");
-}
-.container .collection .fruitcake {
-  background-image: url("../../assets/images/index/fruitcake.png");
-}
-.container .collection .pandancake {
-  background-image: url("../../assets/images/index/pandancake.png");
-}
-.container .collection .name {
-  font-size: 16px;
-  font-weight: 600;
-  margin-top: 14px;
-}
-.container .collection .price {
-  margin-top: 8px;
-  font-size: 20px;
-  color: var(--fresh-green-color);
-}
-.container .collection .add {
-  margin-top: 12px;
 }
 .container .news {
   display: flex;
@@ -266,20 +231,12 @@
 }
 
 @media (max-width: 393px) {
-  .container .categories ul.categories_list {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
   .container .categories ul.categories_list li:last-child {
     grid-column: 1/3;
   }
   .container .intro .intro_background .card {
     right: 48px;
     top: 33px;
-  }
-  .container .collection .tab-pane.active {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
   }
   .container .news ul.news_list {
     grid-template-columns: 1fr;
