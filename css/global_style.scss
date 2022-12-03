@@ -22,6 +22,7 @@
   --red-color: #b40009;
   --grey-color: #bcbcbc;
   --light-grey-color: #d9d9d9;
+  --dark-grey-color: #333333;
 
   /* font  */
   --primary-bold-font: "AvertaBold";
@@ -37,6 +38,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: var(--primary-bold-font);
+  color: var(--dark-grey-color);
 }
 .body {
   display: block;
@@ -51,6 +53,10 @@ h2 {
 }
 //Small Red Button Component
 //Medium Green Button Component
+a {
+  text-decoration: none;
+  color: inherit;
+}
 button.redBtn,
 button.greenBtn {
   display: block;
@@ -229,14 +235,16 @@ footer {
     li {
       flex: 1;
       text-align: center;
-      color: white;
+
       padding: 16px 12px;
       h4 {
         font-size: 16px;
+        color: white;
       }
       p {
         font-size: 14px;
         font-family: var(--primary-regular-font);
+        color: white;
       }
     }
     li + li {
@@ -248,13 +256,14 @@ footer {
     li.below {
       background-color: #fff;
       text-align: start;
-      color: black;
       h4 {
         line-height: 3;
+        color: inherit;
       }
       p,
       a {
         line-height: 2;
+        color: inherit;
       }
       a {
         text-decoration: none;

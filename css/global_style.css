@@ -17,6 +17,7 @@
   --red-color: #b40009;
   --grey-color: #bcbcbc;
   --light-grey-color: #d9d9d9;
+  --dark-grey-color: #333333;
   /* font  */
   --primary-bold-font: "AvertaBold";
   --primary-regular-font: "AvertaRegular";
@@ -30,6 +31,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: var(--primary-bold-font);
+  color: var(--dark-grey-color);
 }
 
 .body {
@@ -41,6 +43,11 @@ h2 {
   margin-bottom: 40px;
   text-align: center;
   color: var(--red-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 button.redBtn,
@@ -221,15 +228,16 @@ footer ul.footer {
 footer ul.footer li {
   flex: 1;
   text-align: center;
-  color: white;
   padding: 16px 12px;
 }
 footer ul.footer li h4 {
   font-size: 16px;
+  color: white;
 }
 footer ul.footer li p {
   font-size: 14px;
   font-family: var(--primary-regular-font);
+  color: white;
 }
 footer ul.footer li + li {
   border-left: 3px solid #fff;
@@ -240,14 +248,15 @@ footer ul.footer.below {
 footer ul.footer.below li.below {
   background-color: #fff;
   text-align: start;
-  color: black;
 }
 footer ul.footer.below li.below h4 {
   line-height: 3;
+  color: inherit;
 }
 footer ul.footer.below li.below p,
 footer ul.footer.below li.below a {
   line-height: 2;
+  color: inherit;
 }
 footer ul.footer.below li.below a {
   text-decoration: none;

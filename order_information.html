@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/global_style.css" />
+    <link rel="stylesheet" href="./css/order_info/order_info.css" />
+    <title>Fresh Garden</title>
+  </head>
+  <body>
+    <!-- <header>
+      <a href="./index.html" class="logo"></a>
+      <ul class="menu_list">
+        <li class="menu_item">
+          <a href="./index.html">Trang chủ</a>
+        </li>
+        <li class="menu_item">
+          <a href="./products.html"> Sản phẩm </a>
+        </li>
+        <li class="menu_item">
+          <a href="./news.html"> Tin tức </a>
+        </li>
+        <li class="menu_item">
+          <a href="./contacts.html"> Liên hệ </a>
+        </li>
+      </ul>
+      <ul class="options">
+        <li>
+          <a href="./search.html">
+            <img src="./assets/images/search.svg" alt="Search" title="Search" />
+          </a>
+        </li>
+        <li>
+          <a href="./cart.html">
+            <img src="./assets/images/cart.svg" alt="Cart" title="Cart" />
+          </a>
+        </li>
+        <li>
+          <a href="./user.html">
+            <img src="./assets/images/user.svg" alt="User" title="User" />
+          </a>
+        </li>
+      </ul>
+    </header> -->
+    <div class="mobile_header">
+      <div class="side_button" id="side_button">
+        <img src="./assets/images/side_button.svg" alt="" />
+      </div>
+      <a href="./index.html" class="logo"></a>
+      <ul class="options">
+        <li>
+          <a href="./search.html">
+            <img src="./assets/images/search.svg" alt="Search" title="Search" />
+          </a>
+        </li>
+        <li>
+          <a href="./cart.html">
+            <img src="./assets/images/cart.svg" alt="Cart" title="Cart" />
+          </a>
+        </li>
+        <li>
+          <a href="./user.html">
+            <img src="./assets/images/user.svg" alt="User" title="User" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="expanded_header" id="expanded_header">
+      <ul class="mobile_menu_list">
+        <li class="mobile_menu_close" id="mobile_menu_close">
+          <img src="./assets/images/close_button.svg" alt="" />
+        </li>
+        <li class="mobile_menu_item">
+          <a href="./index.html">Trang chủ</a>
+        </li>
+        <li class="mobile_menu_item">
+          <a href="./products.html"> Sản phẩm </a>
+        </li>
+        <li class="mobile_menu_item">
+          <a href="./news.html"> Tin tức </a>
+        </li>
+        <li class="mobile_menu_item">
+          <a href="./contacts.html"> Liên hệ </a>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="banner">
+        <h1>
+          Tri ân nhà giáo <br />
+          Gửi trao ngọt ngào
+        </h1>
+        <a href="./news_detail.html"
+          ><button class="greenBtn">Khám phá ngay</button></a
+        >
+      </div>
+      <div class="main_content">
+        <div class="customer_info">
+          <img src="./assets/images/logo.png" alt="" class="logo" />
+          <h1>Thông tin đơn hàng</h1>
+          <div class="delivery_address">
+            <h4 class="title">Địa chỉ giao hàng</h4>
+            <div class="input_field name">
+              <p>Họ tên</p>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Nguyễn Thị Bích Thảo"
+              />
+            </div>
+            <div class="input_field city">
+              <p>Thành phố</p>
+              <input type="text" name="city" id="city" placeholder="Hà Nội" />
+            </div>
+            <div class="input_field phone">
+              <p>Số điện thoại</p>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="0987654321"
+              />
+            </div>
+            <div class="input_field province">
+              <p>Quận / Huyện</p>
+              <input
+                type="text"
+                name="province"
+                id="province"
+                placeholder="Hoàng Mai"
+              />
+            </div>
+            <div class="input_field email">
+              <p>Email</p>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="nguyenthao@gmail.com"
+              />
+            </div>
+            <div class="input_field commune">
+              <p>Phường / Xã</p>
+              <input
+                type="text"
+                name="commune"
+                id="commune"
+                placeholder="Định Công"
+              />
+            </div>
+            <div class="input_field deltail_address">
+              <p>Địa chỉ nhận hàng ( Số nhà, đường / Thôn, xóm )</p>
+              <input
+                type="text"
+                name="deltail_address"
+                id="deltail_address"
+                placeholder="96 Định Công"
+              />
+            </div>
+          </div>
+          <div class="payment_method">
+            <h4 class="title">Phương thức thanh toán</h4>
+            <div class="input_field cod">
+              <input type="radio" name="payment" id="cod" />
+              <label for="cod">Thanh toán khi nhận hàng</label>
+            </div>
+            <div class="input_field bank">
+              <input type="radio" name="payment" id="bank" checked />
+              <label for="bank">Thanh toán qua chuyển khoản ngân hàng</label>
+            </div>
+            <div class="input_field stk">
+              <p>Số tài khoản</p>
+              <input type="text" name="stk" id="stk" placeholder="0999999" />
+            </div>
+            <div class="input_field bank_name">
+              <p>Ngân hàng</p>
+              <input
+                type="text"
+                name="bank_name"
+                id="bank_name"
+                placeholder="Vietcombank"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="order_info">
+          <div class="order_list">
+            <div class="order_cake_item">
+              <div class="img_set">
+                <img
+                  class="product_img"
+                  src="./assets/images/cart/item1.png"
+                  alt=""
+                />
+                <div class="amount">1</div>
+              </div>
+              <div class="item_info">
+                <p class="name">Bánh kem Maccaron</p>
+                <p class="price">250.000 đ</p>
+              </div>
+            </div>
+            <div class="order_cake_item">
+              <div class="img_set">
+                <img
+                  class="product_img"
+                  src="./assets/images/cart/item2.png"
+                  alt=""
+                />
+                <div class="amount">1</div>
+              </div>
+              <div class="item_info">
+                <p class="name">Bánh kem Chocolate</p>
+                <p class="price">250.000 đ</p>
+              </div>
+            </div>
+            <div class="order_cake_item">
+              <div class="img_set">
+                <img
+                  class="product_img"
+                  src="./assets/images/cart/item3.png"
+                  alt=""
+                />
+                <div class="amount">1</div>
+              </div>
+              <div class="item_info">
+                <p class="name">Bánh kem hoa quả</p>
+                <p class="price">250.000 đ</p>
+              </div>
+            </div>
+          </div>
+          <div class="disount_set">
+            <input
+              type="text"
+              name="discount_code"
+              id="discount_code"
+              placeholder="Mã giảm giá"
+            />
+            <button class="greenBtn">Áp dụng</button>
+          </div>
+          <div class="fee">
+            <div class="fee_item">
+              <h4>Phí vận chuyển:</h4>
+              <p>20.000 đ</p>
+            </div>
+            <div class="fee_item">
+              <h4>Khuyến mãi:</h4>
+              <p>50.000 đ</p>
+            </div>
+          </div>
+          <div class="total_price">
+            <h3 class="label">Tổng cộng:</h3>
+            <p>1.130.000 đ</p>
+          </div>
+          <div class="functions">
+            <a href="./index.html"
+              ><button class="greenBtn cancel">Hủy</button></a
+            >
+            <a href="./successfully.html"
+              ><button class="greenBtn confirm">Xác nhận thanh toán</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <ul class="footer">
+        <li class="footer_item">
+          <h4 class="title">Giao hàng nhanh chóng</h4>
+          <p class="sub_title">Vận chuyển hỏa tốc</p>
+        </li>
+        <li class="footer_item">
+          <h4 class="title">Không chất bảo quản</h4>
+          <p class="sub_title">100% nguyên liệu sạch</p>
+        </li>
+        <li class="footer_item">
+          <h4 class="title">Đặt bánh online</h4>
+          <p class="sub_title">Tổng đài 0327006976</p>
+        </li>
+        <li class="footer_item">
+          <h4 class="title">Hỗ trợ 24/7</h4>
+          <p class="sub_title">Hotline 0366006112</p>
+        </li>
+      </ul>
+      <ul class="footer below">
+        <li class="footer_item below">
+          <h4 class="title below">Mua tại cửa hàng</h4>
+          <p class="sub_title below">21 Lê Đức Thọ, Mỹ Đình, Hà Nội</p>
+          <p class="sub_title below">Thứ 2 đến thứ 7: 7.00 - 22.00</p>
+          <p class="sub_title below">Chủ nhật & ngày lễ: 8.30 - 21.00</p>
+        </li>
+        <li class="footer_item below">
+          <h4 class="title below">Hỗ trợ khách hàng</h4>
+          <a href="./buying_guide.html" class="sub_title below"
+            >Hướng dẫn mua hàng</a
+          >
+          <br />
+          <a href="./delivery_policy.html" class="sub_title below"
+            >Chính sách vận chuyển</a
+          >
+          <br />
+          <a href="./refund_policy.html" class="sub_title below"
+            >Chính sách đổi trả & hoàn tiền</a
+          >
+        </li>
+        <li class="footer_item below">
+          <h4 class="title below">Khuyến mãi</h4>
+          <p class="sub_title below">Nhập email để đăng ký nhận khuyến mãi</p>
+          <div class="mail_box">
+            <input
+              type="email"
+              name="offer_email"
+              id="offer_email"
+              placeholder="Nhập email"
+            />
+            <button>Gửi</button>
+          </div>
+        </li>
+      </ul>
+    </footer>
+  </body>
+  <!-- <script src="./js/index_script.js"></script> -->
+</html>

@@ -182,18 +182,19 @@
   align-items: center;
   justify-content: center;
   padding: 59px 23px;
-  color: white;
 }
 .container .contact .contact_container .contact_info h3 {
   font-family: var(--secondary-font);
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 30px;
+  color: white;
 }
 .container .contact .contact_container .contact_info p {
   font-family: var(--primary-regular-font);
   font-size: 14px;
   line-height: 2;
+  color: white;
 }
 .container .contact .contact_container .contact_info button {
   margin-top: 30px;
