@@ -1,0 +1,15 @@
+.container {
+  .main_content {
+    h2.title,
+    .news_list {
+      grid-column: 1/13;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 30px 15px;
+    }
+    a {
+      grid-column: 1/13;
+      margin: 20px auto 0 auto;
+    }
+  }
+}

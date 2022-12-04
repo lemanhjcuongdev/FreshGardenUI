@@ -1,5 +1,6 @@
 .container {
   .main_content {
+    margin-top: 70px;
     h3 {
       margin-bottom: 22px;
     }
@@ -33,7 +34,7 @@
         }
       }
       button.more {
-        margin: 40px auto;
+        margin: 40px auto 0px auto;
       }
     }
     .category_select_menu,

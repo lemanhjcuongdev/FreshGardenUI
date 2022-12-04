@@ -15,7 +15,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
-  margin-bottom: 40px;
 }
 .container .main_content .customer_info .delivery_address .input_field * {
   font-family: var(--primary-regular-font);

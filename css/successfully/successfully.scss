@@ -1,0 +1,25 @@
+.container {
+  .main_content {
+    h2.title {
+      grid-column: 1/13;
+    }
+    .success_info {
+      grid-column: 2/13;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .note {
+          text-align: center;
+          color: var(--red-color);
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

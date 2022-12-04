@@ -1,0 +1,31 @@
+@charset "UTF-8";
+.main_content h2.title,
+.main_content p.about_us {
+  grid-column: 1/13;
+}
+.main_content .text {
+  grid-column: 1/6;
+  margin-top: 77px;
+}
+.main_content .text p.address::after {
+  content: " 21 Đ. Lê Đức Thọ, Mỹ Đình, Nam Từ Liêm, Hà Nội";
+  font-family: var(--primary-regular-font);
+}
+.main_content .text p.email::after {
+  content: " freshgarden@gmail.com";
+  font-family: var(--primary-regular-font);
+}
+.main_content .text p.web::after {
+  content: " www.freshgarden.vn";
+  font-family: var(--primary-regular-font);
+}
+.main_content .text p.hotline::after {
+  content: " 0327006976";
+  font-family: var(--primary-regular-font);
+}
+.main_content .text p + p {
+  margin-top: 16px;
+}
+.main_content iframe {
+  grid-column: 6/13;
+}/*# sourceMappingURL=contacts.css.map */

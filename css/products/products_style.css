@@ -1,3 +1,6 @@
+.container .main_content {
+  margin-top: 70px;
+}
 .container .main_content h3 {
   margin-bottom: 22px;
 }
@@ -30,7 +33,7 @@
   display: none;
 }
 .container .main_content #products button.more {
-  margin: 40px auto;
+  margin: 40px auto 0px auto;
 }
 .container .main_content .category_select_menu,
 .container .main_content .price_select_menu,

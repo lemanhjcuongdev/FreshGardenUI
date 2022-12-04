@@ -110,6 +110,53 @@ button.greenBtn {
     height: 164.96px;
   }
 }
+.news_list_item {
+  transition: var(--primary-transition);
+  background-color: var(--light-grey-color);
+}
+.news_list_item a {
+  text-decoration: none;
+  color: inherit;
+}
+.news_list_item a img {
+  width: 100%;
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.news_list_item a .name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 14px;
+  text-transform: uppercase;
+  margin-top: 7px !important;
+  margin-bottom: 7px !important;
+}
+.news_list_item a .content {
+  font-size: 14px !important;
+  font-family: var(--primary-regular-font);
+  margin-top: 8px;
+  font-size: 20px;
+}
+.news_list_item a .more {
+  font-size: 14px;
+  font-family: var(--primary-regular-font);
+  margin: 12px auto 24px auto;
+  text-decoration: underline;
+  margin-top: 7px !important;
+  padding-bottom: 20px !important;
+}
+.news_list_item a .name,
+.news_list_item a .content,
+.news_list_item a .more {
+  margin: 0px 15px;
+}
+
+.news_list_item:hover {
+  transform: translateY(-8px);
+  cursor: pointer;
+}
+
 .main_content {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -197,7 +244,6 @@ header ul.options li a img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 70px;
 }
 .container .banner h1,
 .container .banner a {
@@ -218,6 +264,7 @@ header ul.options li a img {
 footer {
   margin: 0 auto;
   max-width: 960px;
+  margin-top: 40px;
 }
 footer ul.footer {
   background-color: var(--red-color);

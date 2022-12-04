@@ -1,0 +1,21 @@
+.container .main_content h2.title {
+  grid-column: 1/13;
+}
+.container .main_content .success_info {
+  grid-column: 2/13;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.container .main_content .success_info .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .main_content .success_info .info .note {
+  text-align: center;
+  color: var(--red-color);
+}
+.container .main_content .success_info img {
+  width: 100%;
+}/*# sourceMappingURL=successfully.css.map */
