@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/global_style.css" />
-    <!-- <link rel="stylesheet" href="./css" /> -->
-    <title>CHƯA CÓ TÊN</title>
+    <link rel="stylesheet" href="./css/account/account.css" />
+    <title>Tài khoản</title>
   </head>
   <body>
     <header>
@@ -96,12 +96,125 @@
         >
       </div>
       <div class="main_content">
-        <h2 class="title">Hello new page</h2>
-        <h2>
-          Change Page Title and Highlight the current page index first by adding
-          "active" class, both
-          <i style="text-decoration: underline">desktop and mobile version</i>
-        </h2>
+        <h2 class="title">Tài khoản</h2>
+        <div class="tabs">
+          <div class="tab-item active">Tài khoản</div>
+          <div class="tab-item">Đổi mật khẩu</div>
+          <div class="tab-item">Đơn mua</div>
+        </div>
+        <div class="tab-content">
+          <div class="tab-pane account active">
+            <div class="customer name">
+              <h3 class="title">tên tài khoản</h3>
+              <p>Nguyễn Bích Thảo</p>
+            </div>
+            <div class="customer email">
+              <h3 class="title">email</h3>
+              <p>Nguyenthao020900@gmail.com</p>
+            </div>
+            <div class="customer address">
+              <h3 class="title">địa chỉ</h3>
+              <div class="address item">
+                <div class="info">
+                  Nguyễn Bích Thảo <br />
+                  0987654321 <br />
+                  Minh Khai, Từ Liêm, Hà Nội
+                </div>
+                <div class="delete">Xóa</div>
+                <div class="default true">Mặc định</div>
+              </div>
+              <div class="address item">
+                <div class="info">
+                  Nguyễn Trung Hiếu <br />
+                  0987654321 <br />
+                  Định Công, Thanh Xuân, Hà Nội
+                </div>
+                <div class="delete">Xóa</div>
+                <div class="default false">Đặt làm mặc định</div>
+              </div>
+              <div class="address item">
+                <input
+                  type="text"
+                  name="new_address"
+                  id="new_address"
+                  placeholder="Thêm một địa chỉ mới"
+                />
+                <div class="add">Thêm</div>
+              </div>
+            </div>
+            <div class="customer banking">
+              <h3 class="title">tài khoản ngân hàng</h3>
+              <div class="bank item">
+                <div class="info">0999999999 - Vietcombank</div>
+                <div class="delete">Xóa</div>
+                <div class="default true">Mặc định</div>
+              </div>
+              <div class="bank item">
+                <input
+                  type="text"
+                  name="new_bank"
+                  id="new_bank"
+                  placeholder="Thêm một tài khoản mới"
+                />
+                <div class="add">Thêm</div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane change_password">Khong có gì ở đây cả :v</div>
+          <div class="tab-pane order">
+            <div class="classify">
+              <p class="delivering">Đang giao</p>
+              <p class="delivered">Đã giao</p>
+            </div>
+            <div class="order_list">
+              <div class="order_item">
+                <img
+                  class="product_img"
+                  src="./assets/images/cart/item1.png"
+                  alt=""
+                />
+                <div class="info">
+                  <p class="name">Bánh kem Maccaron</p>
+                  <p class="unit_price">250.000 đ</p>
+                </div>
+                <div class="actions">
+                  <button class="greenBtn">Chi tiết</button>
+                  <button class="greenBtn re_order">Mua lại</button>
+                </div>
+              </div>
+              <div class="order_item">
+                <img
+                  class="product_img"
+                  src="./assets/images/cart/item2.png"
+                  alt=""
+                />
+                <div class="info">
+                  <p class="name">Bánh kem Chocolate</p>
+                  <p class="unit_price">250.000 đ</p>
+                </div>
+                <div class="actions">
+                  <button class="greenBtn">Chi tiết</button>
+                  <button class="greenBtn re_order">Mua lại</button>
+                </div>
+              </div>
+              <div class="order_item">
+                <img
+                  class="product_img"
+                  src="./assets/images/cart/item3.png"
+                  alt=""
+                />
+                <div class="info">
+                  <p class="name">Bánh kem hoa quả</p>
+                  <p class="unit_price">250.000 đ</p>
+                </div>
+                <div class="actions">
+                  <button class="greenBtn">Chi tiết</button>
+                  <button class="greenBtn re_order">Mua lại</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <footer>
@@ -161,4 +274,5 @@
     </footer>
   </body>
   <script src="./js/index_script.js"></script>
+  <script src="./js/account_script.js"></script>
 </html>

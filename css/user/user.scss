@@ -1,0 +1,46 @@
+.main_content {
+  h2.title {
+    grid-column: 1/13;
+  }
+  h4.title {
+    border-bottom: 1px solid var(--dark-grey-color);
+  }
+  .username,
+  .password,
+  .email,
+  .password2 {
+    p {
+      font-family: var(--primary-regular-font);
+      margin-top: 20px;
+    }
+    input {
+      width: 100%;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 10px;
+      background-color: var(--light-grey-color);
+      margin-top: 4px;
+    }
+  }
+  .forgot {
+    margin-top: 10px;
+    text-align: end;
+    font-family: var(--primary-regular-font);
+    text-decoration: underline;
+  }
+
+  .sign_in {
+    grid-column: 2/6;
+    button {
+      background-color: var(--red-color);
+      margin-top: 10px;
+    }
+  }
+  .sign_up {
+    grid-column: 8/12;
+    button {
+      background-color: var(--red-color);
+      margin-top: 40px;
+    }
+  }
+}

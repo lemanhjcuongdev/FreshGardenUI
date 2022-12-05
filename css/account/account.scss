@@ -1,0 +1,138 @@
+.main_content {
+  h2.title,
+  .tabs {
+    grid-column: 1/13;
+  }
+  .tab-content {
+    .tab-pane.account.active {
+      .customer {
+        margin-bottom: 37px;
+        h3.title {
+          text-transform: uppercase;
+          border-bottom: 1px solid var(--dark-grey-color);
+          margin-bottom: 20px;
+        }
+        p {
+          font-family: var(--primary-regular-font);
+        }
+      }
+      .address,
+      .banking {
+        .item {
+          display: grid;
+          grid-template-columns: repeat(10, 1fr);
+          gap: 15px;
+          margin-bottom: 11px;
+          * {
+            font-family: var(--primary-regular-font);
+          }
+          .info,
+          input {
+            grid-column: 1/6;
+          }
+          input {
+            padding: 11px 21px;
+            border: 1px solid var(--grey-color);
+            border-radius: 20px;
+          }
+          .delete,
+          .add {
+            grid-column: 6/9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: underline;
+            cursor: pointer;
+          }
+          .default {
+            grid-column: 9/11;
+            display: flex;
+            align-items: center;
+          }
+          .false {
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .tab-pane.order.active {
+      display: flex;
+      .classify {
+        p {
+          cursor: pointer;
+        }
+        .delivering {
+          border-bottom: 2px solid var(--fresh-green-color);
+          color: var(--fresh-green-color);
+          margin-bottom: 40px;
+        }
+      }
+      .order_list {
+        flex: 1;
+        margin-left: 29px;
+        .order_item {
+          border-top: 1px solid var(--grey-color);
+          padding: 16px 0px;
+          display: flex;
+          align-items: center;
+          .product_img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+          }
+          .info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 18px;
+            .name {
+              font-family: var(--primary-regular-font);
+            }
+            .unit_price {
+              color: var(--red-color);
+            }
+          }
+          .actions {
+            display: flex;
+            height: 100%;
+            button {
+              margin-right: 45px;
+            }
+            button.re_order {
+              background-color: var(--red-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+}
+.tab-item {
+  margin: 0px 29px;
+  font-size: 20px;
+  text-align: center;
+  color: var(--dark-grey-color);
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: var(primary-transition);
+}
+.tab-item.active {
+  border-bottom: 2px solid var(--red-color);
+  color: var(--red-color);
+}
+.tab-content {
+  margin: 40px 0 0 0;
+  grid-column: 2/12;
+}
+.tab-pane {
+  display: none;
+}
+.tab-pane.active {
+  display: block;
+}

@@ -1,0 +1,41 @@
+.main_content h2.title,
+.main_content .search_set,
+.main_content .result,
+.main_content .cake_list {
+  grid-column: 1/13;
+}
+.main_content .search_set {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  border-top: 1px solid var(--dark-grey-color);
+  border-bottom: 1px solid var(--dark-grey-color);
+  border-radius: 99px;
+}
+.main_content .search_set .search_icon {
+  grid-column: 1/2;
+}
+.main_content .search_set .search_icon,
+.main_content .search_set .cancel_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.main_content .search_set .search_input {
+  grid-column: 2/12;
+  height: 100%;
+  padding: 17px 18px;
+  border: none;
+  font-size: 20px;
+}
+.main_content .search_set input:focus {
+  outline: none;
+}
+.main_content .search_set .cancel_icon {
+  grid-column: 12/13;
+}
+.main_content .result {
+  text-align: center;
+  font-family: var(--primary-regular-font);
+  margin-bottom: 15px;
+}/*# sourceMappingURL=search.css.map */

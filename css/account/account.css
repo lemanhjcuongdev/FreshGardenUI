@@ -1,0 +1,143 @@
+.main_content h2.title,
+.main_content .tabs {
+  grid-column: 1/13;
+}
+.main_content .tab-content .tab-pane.account.active .customer {
+  margin-bottom: 37px;
+}
+.main_content .tab-content .tab-pane.account.active .customer h3.title {
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--dark-grey-color);
+  margin-bottom: 20px;
+}
+.main_content .tab-content .tab-pane.account.active .customer p {
+  font-family: var(--primary-regular-font);
+}
+.main_content .tab-content .tab-pane.account.active .address .item,
+.main_content .tab-content .tab-pane.account.active .banking .item {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 15px;
+  margin-bottom: 11px;
+}
+.main_content .tab-content .tab-pane.account.active .address .item *,
+.main_content .tab-content .tab-pane.account.active .banking .item * {
+  font-family: var(--primary-regular-font);
+}
+.main_content .tab-content .tab-pane.account.active .address .item .info,
+.main_content .tab-content .tab-pane.account.active .address .item input,
+.main_content .tab-content .tab-pane.account.active .banking .item .info,
+.main_content .tab-content .tab-pane.account.active .banking .item input {
+  grid-column: 1/6;
+}
+.main_content .tab-content .tab-pane.account.active .address .item input,
+.main_content .tab-content .tab-pane.account.active .banking .item input {
+  padding: 11px 21px;
+  border: 1px solid var(--grey-color);
+  border-radius: 20px;
+}
+.main_content .tab-content .tab-pane.account.active .address .item .delete,
+.main_content .tab-content .tab-pane.account.active .address .item .add,
+.main_content .tab-content .tab-pane.account.active .banking .item .delete,
+.main_content .tab-content .tab-pane.account.active .banking .item .add {
+  grid-column: 6/9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.main_content .tab-content .tab-pane.account.active .address .item .default,
+.main_content .tab-content .tab-pane.account.active .banking .item .default {
+  grid-column: 9/11;
+  display: flex;
+  align-items: center;
+}
+.main_content .tab-content .tab-pane.account.active .address .item .false,
+.main_content .tab-content .tab-pane.account.active .banking .item .false {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.main_content .tab-content .tab-pane.order.active {
+  display: flex;
+}
+.main_content .tab-content .tab-pane.order.active .classify p {
+  cursor: pointer;
+}
+.main_content .tab-content .tab-pane.order.active .classify .delivering {
+  border-bottom: 2px solid var(--fresh-green-color);
+  color: var(--fresh-green-color);
+  margin-bottom: 40px;
+}
+.main_content .tab-content .tab-pane.order.active .order_list {
+  flex: 1;
+  margin-left: 29px;
+}
+.main_content .tab-content .tab-pane.order.active .order_list .order_item {
+  border-top: 1px solid var(--grey-color);
+  padding: 16px 0px;
+  display: flex;
+  align-items: center;
+}
+.main_content .tab-content .tab-pane.order.active .order_list .order_item .product_img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main_content .tab-content .tab-pane.order.active .order_list .order_item .info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 18px;
+}
+.main_content .tab-content .tab-pane.order.active .order_list .order_item .info .name {
+  font-family: var(--primary-regular-font);
+}
+.main_content .tab-content .tab-pane.order.active .order_list .order_item .info .unit_price {
+  color: var(--red-color);
+}
+.main_content .tab-content .tab-pane.order.active .order_list .order_item .actions {
+  display: flex;
+  height: 100%;
+}
+.main_content .tab-content .tab-pane.order.active .order_list .order_item .actions button {
+  margin-right: 45px;
+}
+.main_content .tab-content .tab-pane.order.active .order_list .order_item .actions button.re_order {
+  background-color: var(--red-color);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+}
+
+.tab-item {
+  margin: 0px 29px;
+  font-size: 20px;
+  text-align: center;
+  color: var(--dark-grey-color);
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: var(primary-transition);
+}
+
+.tab-item.active {
+  border-bottom: 2px solid var(--red-color);
+  color: var(--red-color);
+}
+
+.tab-content {
+  margin: 40px 0 0 0;
+  grid-column: 2/12;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}/*# sourceMappingURL=account.css.map */
