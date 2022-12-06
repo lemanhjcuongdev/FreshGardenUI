@@ -143,6 +143,9 @@
   justify-content: space-between;
   margin-top: 30px;
 }
+.container .main_content .order_info .total_price p {
+  color: var(--red-color);
+}
 .container .main_content .order_info .functions {
   display: flex;
   justify-content: flex-end;

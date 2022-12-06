@@ -147,6 +147,9 @@
         display: flex;
         justify-content: space-between;
         margin-top: 30px;
+        p {
+          color: var(--red-color);
+        }
       }
       .functions {
         display: flex;

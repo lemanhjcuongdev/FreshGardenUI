@@ -2,6 +2,8 @@
   h2.title,
   p.about_us {
     grid-column: 1/13;
+    font-family: var(--primary-regular-font);
+    line-height: 1.5;
   }
   .text {
     grid-column: 1/6;

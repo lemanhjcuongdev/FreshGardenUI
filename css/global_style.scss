@@ -387,6 +387,7 @@ footer {
     right: 0;
     top: 0;
     background-color: white;
+    animation: expanded_header_open 0.3s;
     ul.mobile_menu_list {
       // width: 100vw;
       li.mobile_menu_item {
@@ -414,9 +415,15 @@ footer {
       }
     }
   }
-  .expanded_header.active > .container {
-    overflow: hidden;
+  @keyframes expanded_header_open {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
   }
+
   .container {
     margin: 0 20px;
     .banner {

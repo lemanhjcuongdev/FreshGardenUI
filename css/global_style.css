@@ -376,6 +376,8 @@ footer ul.footer.below li.below .mail_box button {
     right: 0;
     top: 0;
     background-color: white;
+    -webkit-animation: expanded_header_open 0.3s;
+            animation: expanded_header_open 0.3s;
   }
   .expanded_header.active ul.mobile_menu_list li.mobile_menu_item {
     padding: 7px 0px 7px 14px;
@@ -400,8 +402,21 @@ footer ul.footer.below li.below .mail_box button {
   .expanded_header.active ul.mobile_menu_list li.mobile_menu_item.active a {
     color: var(--red-color);
   }
-  .expanded_header.active > .container {
-    overflow: hidden;
+  @-webkit-keyframes expanded_header_open {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes expanded_header_open {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
   }
   .container {
     margin: 0 20px;

@@ -120,7 +120,7 @@
 }
 .container .main_content .cart_container h4.time,
 .container .main_content .cart_container .order_date,
-.container .main_content .cart_container .order_time {
+.container .main_content .cart_container #time {
   font-family: var(--primary-regular-font);
   border-radius: 10px;
   padding: 0px 7px;
@@ -194,6 +194,10 @@
   .container .main_content .cart_container .total {
     grid-row: 3/4;
     grid-column: 1/6;
+  }
+  .container .main_content .cart_container .total h4 {
+    margin: 20px 0px;
+    padding: 0;
   }
   .container .main_content .cart_container .order_time {
     grid-row: 3/4;

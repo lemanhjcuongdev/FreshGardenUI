@@ -84,6 +84,7 @@
         list-style: none;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
         display: none;
+        animation: menu_item_move 0.3s;
         .category_option,
         .price_option,
         .flavor_option,
@@ -95,11 +96,22 @@
           cursor: pointer;
           border-radius: 8px;
         }
+
         .category_option:hover,
         .price_option:hover,
         .flavor_option:hover,
         .size_option:hover {
           background: #f2f2f2;
+        }
+      }
+      @keyframes menu_item_move {
+        from {
+          opacity: 0;
+          transform: translateY(-30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0px);
         }
       }
     }
@@ -132,6 +144,7 @@
         left: 0;
         right: 0;
         padding: 28px 14px;
+        animation: expanded_filter_open 0.3s;
         .left_top_title {
           h3 {
             display: none;
@@ -150,6 +163,14 @@
             background-color: var(--red-color);
             margin-bottom: 22px;
           }
+        }
+      }
+      @keyframes expanded_filter_open {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(0%);
         }
       }
     }
