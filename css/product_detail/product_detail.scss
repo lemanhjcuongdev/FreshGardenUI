@@ -137,3 +137,11 @@
     }
   }
 }
+@media (max-width: 393px) {
+  .img_set {
+    grid-column: 1/13 !important;
+  }
+  .infor {
+    grid-column: 1/13 !important;
+  }
+}
